@@ -1,0 +1,152 @@
+/*--------- adjustment ----------*/
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Droid Sans;
+    src: url(../fonts/DroidSans.ttf);
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    font-size: 100%;
+}
+
+body {
+    font: 400 16px 'Droid Sans', Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+    color: #555;
+    background-color: #fff;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+.app_wrapper {
+	max-width: 480px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+/* ????????????????????????????? */
+/*
+.no_gutters {
+	padding: 0;
+}
+*/
+
+/*--------- header ----------*/
+
+.app_header {
+	background-color: #00A08C;
+	color: #fff;	
+	font-size: 1rem;
+	line-height: 4rem;
+}
+	.app_header .logo {
+		background-color: #0088B4;	
+	}
+		.app_header .logo a h1 {
+			display: block;
+			color: #fff;
+/*			font-family: Arial, sans-serif;*/
+			font-size: 1.5rem;
+			font-weight: bold;
+			line-height: 4rem;
+			letter-spacing: .07em;
+			margin: 0;
+		}
+	.page_name {
+	}
+	.arrow_left_btn {
+		font-size: 1.5rem;
+		border-left: 1px solid #29AF9E;
+		border-right: 1px solid #6AC7BC;
+	}
+	.menu_burger {
+		font-size: 1.5rem;
+	}
+
+/*--------- main ----------*/
+
+.intro {
+	border-bottom: 1px solid #E2E2E2;
+	padding: 1rem 15px;
+}
+
+.person {
+	position: relative;
+	border-bottom: 1px solid #E2E2E2;
+	padding: 1rem 2em;
+}
+
+.person:before {
+	position: absolute;
+    content: '\f007';
+    font: 400 1.2rem FontAwesome;
+	top: 1rem;
+	left: 0;
+}
+
+.person:after {
+	position: absolute;
+    content: '\f107';
+    font: 400 1.2rem FontAwesome;
+	top: 1rem;
+	right: 0;
+}
+
+.person_edited:before {
+    content: '\f14b';
+	color: #999;
+}
+
+.person_edited:after {
+    content: '\f106';
+	color: #999;
+}
+
+.person_admin:before {
+    content: '\f005';
+	color: #FFC141;
+}
+/*
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+*/
