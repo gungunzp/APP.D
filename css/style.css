@@ -12,11 +12,11 @@
 html {
     width: 100%;
     height: 100%;
-    font-size: 100%;
+    font: 400 16px 'Droid Sans', Arial, sans-serif;
 }
 
 body {
-    font: 400 16px 'Droid Sans', Arial, sans-serif;
+    font-size: 100%;
     width: 100%;
     height: 100%;
     color: #555;
@@ -33,9 +33,9 @@ a:active {
 }
 
 .app_wrapper {
-	max-width: 480px;
+	max-width: 28.5rem;
+/*	max-width: 480px;*/
 	margin: 0 auto;
-	padding: 0 15px;
 }
 
 /* ????????????????????????????? */
@@ -81,45 +81,98 @@ a:active {
 
 .intro {
 	border-bottom: 1px solid #E2E2E2;
-	padding: 1rem 15px;
+	padding: 1rem 1rem;
 }
 
 .person {
-	position: relative;
 	border-bottom: 1px solid #E2E2E2;
-	padding: 1rem 2em;
+	padding: 0 .5rem;
 }
-
-.person:before {
-	position: absolute;
-    content: '\f007';
-    font: 400 1.2rem FontAwesome;
-	top: 1rem;
-	left: 0;
-}
-
-.person:after {
-	position: absolute;
-    content: '\f107';
-    font: 400 1.2rem FontAwesome;
-	top: 1rem;
-	right: 0;
-}
-
-.person_edited:before {
-    content: '\f14b';
+	.person_name {
+		position: relative;
+		padding: 1rem 1.5em 1rem 2.5em;
+	}
+	.person_name:before {
+		position: absolute;
+		content: '\f007';
+		font: 400 1.2rem FontAwesome;
+		top: 1rem;
+		left: .5rem;
+	}
+	.person_name:after {
+		position: absolute;
+		content: '\f107';
+		font: 400 1.2rem FontAwesome;
+		top: 1rem;
+		right:  .5rem;
+	}
+	.person_admin .person_name {
+		font-weight: bold;
+	}
+	.person_admin .person_name:before {
+		content: '\f005';
+		color: #FFC141;
+	}
+.person_edited {
 	color: #999;
+	background-color: #F6F6F6;
+}
+	.person_edited .person_name:before {
+		content: '\f14b';
+		color: #999;
+	}
+	.person_edited .person_name:after {
+		content: '\f106';
+		color: #999;
+	}
+
+/* -------- form styles start ------------*/
+.app_form {
+	padding: 0 .5rem;	
+}
+	.app_form .col_left {
+		float: left;
+		width: 48%;
+	}
+	.app_form .col_right {
+		float: right;
+		width: 48%;
+	}
+
+/* ---- Bootstrap customizing start ---- */
+.app_form .form-control {
+	height: 2rem;
+    color: #999;
+    font: 400 1rem 'Droid Sans', Arial, sans-serif;
+    border-color: #999;
+	margin-bottom: .5rem;
+}
+/* ---- Bootstrap customizing end ---- */
+
+.app_select_block select {
+    background: #fff url('../img/arrow_down_grey.png') right center no-repeat;
+	background-size: 1.5em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none!important;
 }
 
-.person_edited:after {
-    content: '\f106';
-	color: #999;
+.app_select_block select::-ms-expand {
+    display: none;
 }
+/* -------- form styles end -----------*/
 
-.person_admin:before {
-    content: '\f005';
-	color: #FFC141;
+.app_tab_btn {
+	clear: both;
+	font-weight: bold;
+	border: 2px solid #555;
+	border-radius: 4px;
+	margin: .5rem;
 }
+	.app_tab_btn a {
+		
+	}
 /*
 1
 1

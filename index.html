@@ -26,7 +26,7 @@
     <div class="app_wrapper">
 
         <!-- header -->
-        <header class="app_header row">
+        <header class="app_header clearfix">
             <div class="logo col-xs-3">
                 <a href="#">
                     <h1>APP/D</h1>
@@ -42,57 +42,51 @@
         </header>
 
         <!-- main -->
-        <main class="app_main row">
+        <main class="app_main">
             <div class="intro">
                 Welcome to your assigned team, <b>Henry</b>.
                 <br>
                 <small>Feel free to edit and/or add new volunteers below.</small>
             </div>
             <div class="person person_admin">
-<!--                <i class="fa fa-star" aria-hidden="true"></i>-->
-                <div class="person_name"><b>Henry James</b></div>
-<!--                <i class="fa fa-angle-down" aria-hidden="true"></i>-->
+                <div class="person_name">Henry James</div>
             </div>
             <div class="person">
-<!--                <i class="fa fa-user" aria-hidden="true"></i>-->
                 <div class="person_name">Jefferson Gilligan</div>
-<!--                <i class="fa fa-angle-down" aria-hidden="true"></i>-->
             </div>
             <div class="person">
-<!--                <i class="fa fa-user" aria-hidden="true"></i>-->
                 <div class="person_name">Jose Robatham</div>
-<!--                <i class="fa fa-angle-down" aria-hidden="true"></i>-->
             </div>
             <div class="person person_edited">
-<!--                <i class="fa fa-pencil-square" aria-hidden="true"></i>-->
                 <div class="person_name">Penny Cunnings</div>
-<!--                <i class="fa fa-angle-up" aria-hidden="true"></i>-->
-                <div class="row">
-                    <form action="" class="form-inline">
+                <div class="app_form_block">
+                    <form action="" class="app_form">
 
-                        <input type="text" class="app_input form-control col-xs-6" placeholder="First name">
+                        <input type="text" class="form-control col_left" placeholder="First name">
 
-                        <input type="text" class="app_input form-control col-xs-6" placeholder="Last name">
+                        <input type="text" class="form-control col_right" placeholder="Last name">
 
                         <label class="sr-only" for="exampleInputEmail3">Email address</label>
-                        <input type="email" class="app_input form-control col-xs-12" placeholder="Email address">
+                        <input type="email" class="form-control" placeholder="Email address">
 
-                        <input type="text" class="app_input form-control col-xs-6" placeholder="Address">
+                        <input type="text" class="form-control col_left" placeholder="Address">
 
-                        <input type="text" class="app_input form-control col-xs-6" placeholder="City">
+                        <input type="text" class="form-control col_right" placeholder="City">
 
-                        <select class="app_select_city form-control col-xs-6" name="app_select_city" id="app_select_city" placeholder="Country">
-                            <option value="">New York</option>
-                            <option value="">Los Angeles</option>
-                        </select>
+                        <div class="app_select_block col_left">
+                        	<select class="form-control " name="app_select_city" id="app_select_city" placeholder="Country">
+                        	    <option value="">Country</option>
+                        	    <option value="">Country</option>
+                        	</select>
+                        </div>
 
-                        <input type="text" class="app_input form-control col-xs-6" placeholder="Zip/post code">
+                        <input type="text" class="form-control col_right" placeholder="Zip/post code">
 
                     </form>
                 </div>
                 <div class="app_tab_btn">
-                    <a href="#">Clear</a>
-                    <a href="#">Save</a>
+                    <a href="#" class="">Clear</a>
+                    <a href="#" class="">Save</a>
                 </div>
             </div>
             <a href="#" class="app_add">
@@ -101,7 +95,7 @@
         </main>
 
         <!-- footer -->
-        <footer class="app_footer container-fluid row">
+        <footer class="app_footer">
             <a href="#">
             	Accept &amp; Continue
             </a>
