@@ -51,7 +51,7 @@ a:active {
 	background-color: #00A08C;
 	color: #fff;	
 	font-size: 1rem;
-	line-height: 4rem;
+	line-height: 4.4rem;
 }
 	.app_header .logo {
 		background-color: #0088B4;	
@@ -62,7 +62,7 @@ a:active {
 /*			font-family: Arial, sans-serif;*/
 			font-size: 1.5rem;
 			font-weight: bold;
-			line-height: 4rem;
+			line-height: 4.4rem;
 			letter-spacing: .07em;
 			margin: 0;
 		}
@@ -81,30 +81,31 @@ a:active {
 
 .intro {
 	border-bottom: 1px solid #E2E2E2;
-	padding: 1rem 1rem;
+	padding: 1.12rem 1.6rem;
+	letter-spacing: .014em;
 }
 
 .person {
 	border-bottom: 1px solid #E2E2E2;
-	padding: 0 .5rem;
+	padding: 0 1.2rem;
 }
 	.person_name {
 		position: relative;
-		padding: 1rem 1.5em 1rem 2.5em;
+		padding: 1.3rem 1.5em 1.4rem 2.7em;
 	}
 	.person_name:before {
 		position: absolute;
 		content: '\f007';
-		font: 400 1.2rem FontAwesome;
-		top: 1rem;
-		left: .5rem;
+		font: 400 1.3rem FontAwesome;
+		top: 1.3rem;
+		left: .7rem;
 	}
 	.person_name:after {
 		position: absolute;
 		content: '\f107';
-		font: 400 1.2rem FontAwesome;
-		top: 1rem;
-		right:  .5rem;
+		font: 400 1.5rem FontAwesome;
+		top: 1.2rem;
+		right: .5rem;
 	}
 	.person_admin .person_name {
 		font-weight: bold;
@@ -127,7 +128,7 @@ a:active {
 	}
 
 /* -------- form styles start ------------*/
-.app_form {
+.app_form_block {
 	padding: 0 .5rem;	
 }
 	.app_form .col_left {
@@ -163,15 +164,65 @@ a:active {
 }
 /* -------- form styles end -----------*/
 
-.app_tab_btn {
+.app_tab_block {
 	clear: both;
-	font-weight: bold;
-	border: 2px solid #555;
-	border-radius: 4px;
-	margin: .5rem;
+	margin: 1rem .5rem;
+	padding: 0;
 }
-	.app_tab_btn a {
-		
+	.app_btn {
+		display: block;
+		height: 2rem;
+		border-radius: 4px;
+		font-weight: bold;
+		line-height: 2rem;
+		text-align: center;
+	}
+	.app_tab_btn {
+		float: left;
+		width: 50%;
+		background-color: #fff;
+		color: #555;
+		border: 2px solid #555;
+	}
+	.app_tab_btn:first-child {
+		border-radius: 4px 0 0 4px;
+		border-right-width: 1px;
+	}
+	.app_tab_btn:last-child {
+		border-radius: 0 4px 4px 0;
+		border-left-width: 1px;
+	}
+	.app_tab_btn:hover {
+		background-color: #555;
+		color: #fff;
+	}
+
+.app_add {
+	width: 50%;
+	background-color: #999;
+	color: #fff;
+	margin: 1rem auto 1.5rem;
+}
+
+.app_add:hover {
+	background-color: #555;
+	color: #fff;
+}
+
+/*--------- footer ----------*/
+
+.app_footer {
+	background-color: #00A08C;
+	padding: 1rem 1rem;
+}
+	.app_footer_btn {
+		background-color: #00A08C;
+		color: #fff;
+		border: 2px solid #fff;
+	}
+	.app_footer_btn:hover {
+		background-color: #fff;
+		color: #00A08C;
 	}
 /*
 1
