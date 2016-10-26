@@ -1,4 +1,4 @@
-/*--------- adjustment ----------*/
+/*----------------- adjustment ----------------*/
 
 * {
     box-sizing: border-box;
@@ -12,13 +12,14 @@
 html {
     width: 100%;
     height: 100%;
-    font: 400 16px 'Droid Sans', Arial, sans-serif;
+	font-size: 100%;
 }
 
 body {
-    font-size: 100%;
     width: 100%;
     height: 100%;
+    font-size: 100%;
+    font-family: 'Droid Sans', Arial, sans-serif;
     color: #555;
     background-color: #fff;
 }
@@ -38,14 +39,7 @@ a:active {
 	margin: 0 auto;
 }
 
-/* ????????????????????????????? */
-/*
-.no_gutters {
-	padding: 0;
-}
-*/
-
-/*--------- header ----------*/
+/*------------------ header -------------------*/
 
 .app_header {
 	background-color: #00A08C;
@@ -54,19 +48,22 @@ a:active {
 	line-height: 4.4rem;
 }
 	.app_header .logo {
-		background-color: #0088B4;	
+		background: #0088B4 url(../img/logo.png) no-repeat 1.5rem center;
+		background-size: 62%;
+		padding: 0 0 0 1.5rem;
 	}
 		.app_header .logo a h1 {
 			display: block;
-			color: #fff;
-/*			font-family: Arial, sans-serif;*/
-			font-size: 1.5rem;
+			color: transparent;
+			font-family: Helvetica, Arial, sans-serif;
+			font-size: 1.4rem;
 			font-weight: bold;
 			line-height: 4.4rem;
 			letter-spacing: .07em;
 			margin: 0;
 		}
 	.page_name {
+		padding: 0 0 0 1em;
 	}
 	.arrow_left_btn {
 		font-size: 1.5rem;
@@ -77,13 +74,17 @@ a:active {
 		font-size: 1.5rem;
 	}
 
-/*--------- main ----------*/
+/*----------------- main ---------------------*/
 
 .intro {
 	border-bottom: 1px solid #E2E2E2;
-	padding: 1.12rem 1.6rem;
-	letter-spacing: .014em;
+	padding: 1.12rem 1.6rem 1.5rem;
+	letter-spacing: .01em;
 }
+	.intro .small {
+		font-size: .8rem;
+		letter-spacing: 0;
+	}
 
 .person {
 	border-bottom: 1px solid #E2E2E2;
@@ -91,22 +92,37 @@ a:active {
 }
 	.person_name {
 		position: relative;
-		padding: 1.3rem 1.5em 1.4rem 2.7em;
+		padding: 1.3rem .5em 1.35rem 2.7em;
+	}
+	.person_open {
+		float: right;
+	}
+	.person_open:before {
+		color: #555;
+		content: '\f107';
+		font: 400 1.5rem FontAwesome;
+	}
+	.person_edited .person_open:before {
+		color: #999;
+		content: '\f106';
+		font: 400 1.5rem FontAwesome;
 	}
 	.person_name:before {
 		position: absolute;
 		content: '\f007';
-		font: 400 1.3rem FontAwesome;
-		top: 1.3rem;
+		font: 400 1.25rem FontAwesome;
+		top: 1.4rem;
 		left: .7rem;
 	}
+/*
 	.person_name:after {
 		position: absolute;
 		content: '\f107';
 		font: 400 1.5rem FontAwesome;
-		top: 1.2rem;
+		top: 1.1rem;
 		right: .5rem;
 	}
+*/
 	.person_admin .person_name {
 		font-weight: bold;
 	}
@@ -121,11 +137,16 @@ a:active {
 	.person_edited .person_name:before {
 		content: '\f14b';
 		color: #999;
+		font-size: 1.45rem;
+		top: 1.2rem;
+		left: .6rem;
 	}
+/*
 	.person_edited .person_name:after {
 		content: '\f106';
 		color: #999;
 	}
+*/
 
 /* -------- form styles start ------------*/
 .app_form_block {
@@ -137,14 +158,14 @@ a:active {
 	}
 	.app_form .col_right {
 		float: right;
-		width: 48%;
+		width: 48.5%;
 	}
 
 /* ---- Bootstrap customizing start ---- */
 .app_form .form-control {
-	height: 2rem;
+	height: 2.5rem;
     color: #999;
-    font: 400 1rem 'Droid Sans', Arial, sans-serif;
+    font: 400 .8rem 'Droid Sans', Arial, sans-serif;
     border-color: #999;
 	margin-bottom: .5rem;
 }
@@ -152,7 +173,8 @@ a:active {
 
 .app_select_block select {
     background: #fff url('../img/arrow_down_grey.png') right center no-repeat;
-	background-size: 1.5em;
+	background-size: 1.5rem;
+	padding-right: 1rem;
     -webkit-appearance: none;
     -moz-appearance: none;
     -ms-appearance: none;
@@ -166,15 +188,16 @@ a:active {
 
 .app_tab_block {
 	clear: both;
-	margin: 1rem .5rem;
+	margin: 1.1rem .5rem 1.45rem;
 	padding: 0;
 }
 	.app_btn {
 		display: block;
-		height: 2rem;
+		height: 2.5rem;
 		border-radius: 4px;
+		font-size: .8rem;
 		font-weight: bold;
-		line-height: 2rem;
+		line-height: 2.5rem;
 		text-align: center;
 	}
 	.app_tab_btn {
@@ -182,15 +205,14 @@ a:active {
 		width: 50%;
 		background-color: #fff;
 		color: #555;
-		border: 2px solid #555;
+		border: 1px solid #555;
 	}
 	.app_tab_btn:first-child {
 		border-radius: 4px 0 0 4px;
-		border-right-width: 1px;
 	}
 	.app_tab_btn:last-child {
 		border-radius: 0 4px 4px 0;
-		border-left-width: 1px;
+		border-left-width: 0;
 	}
 	.app_tab_btn:hover {
 		background-color: #555;
@@ -198,59 +220,39 @@ a:active {
 	}
 
 .app_add {
-	width: 50%;
+	position: relative;
+	width: 44%;
 	background-color: #999;
 	color: #fff;
-	margin: 1rem auto 1.5rem;
+	text-align: left;
+	margin: 1.1rem 29% 1.7rem 27%;
+	padding-left: 12%;
+	
 }
-
+	.app_add:before {
+		position: absolute;
+		content: '\f055';
+		font: 400 1.05rem FontAwesome;
+		top: .7rem;
+		left: 14%;
+	}
 .app_add:hover {
 	background-color: #555;
 	color: #fff;
 }
 
-/*--------- footer ----------*/
+/*----------------- footer ----------------*/
 
 .app_footer {
 	background-color: #00A08C;
-	padding: 1rem 1rem;
+	padding: 1.1rem 1.7rem;
 }
 	.app_footer_btn {
 		background-color: #00A08C;
 		color: #fff;
-		border: 2px solid #fff;
+		border: 1px solid #fff;
 	}
 	.app_footer_btn:hover {
 		background-color: #fff;
 		color: #00A08C;
 	}
-/*
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-1
-*/
