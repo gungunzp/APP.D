@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>APP/D</title>
+    <title>APP/D (popup)</title>
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <!-- Latest compiled and minified CSS -->
@@ -26,7 +26,7 @@
         <!-- header -->
         <header class="app_header clearfix">
             <div class="logo col-xs-3">
-                <a href="index.html">
+                <a href="popup.html">
                     <h1>APP/D</h1>
                 </a>
             </div>
@@ -111,6 +111,27 @@
             <a href="#" class="app_footer_btn app_btn">Accept &amp; Continue</a>
         </footer>
         
+        <!-- popup -->
+        <div id="app_overlay">
+        	<a href="#app_overlay" class="app_popup_close">
+        		<i class="fa fa-times" aria-hidden="true"></i>
+        	</a>
+			<div id="app_popup" class="text-center">
+				<div class="support_title">Contact Support</div>
+				<div class="support_desc">Choose your method of contact.</div>
+				<div class="support_btn_block container-fluid">
+					<a href="#" class="call_support">
+						<i class="fa fa-phone" aria-hidden="true"></i>
+						Call Support
+					</a>
+					<a href="#" class="email_support">
+						<i class="fa fa-envelope" aria-hidden="true"></i>
+						Email Support
+					</a>
+				</div>
+			</div>
+        </div>
+
     </div>
 </body>
 
