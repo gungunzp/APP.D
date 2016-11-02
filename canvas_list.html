@@ -30,88 +30,82 @@
                     <h1>APP/D</h1>
                 </a>
             </div>
-            <div class="page_name col-xs-7">Canvas list</div>
-            <div class="menu_burger text-center col-xs-2">
+            <div class="page_name col-xs-7">Canvas List</div>
+            <a href="#" class="menu_burger text-center col-xs-2">
                 <i class="fa fa-bars" aria-hidden="true"></i>
-            </div>
+            </a>
         </header>
 
         <!-- map -->
-        <div id="map"></div>
+        <div id="map">
+        	<a href="#" class="map_arrow text-center">
+        		<i class="fa fa-angle-up" aria-hidden="true"></i>
+        	</a>
+        </div>
 
         <!-- main -->
         <main class="app_main">
-           
-            <div class="streets_block clearfix">
+
+            <header class="streets_header clearfix">
                 <div class="streets col-xs-9">
-                    <i class="fa fa-map-o" aria-hidden="true"></i> Streets
+<!--                    <i class="fa fa-map-o" aria-hidden="true"></i>-->
+                    Streets
                 </div>
-                <div class="streets_progress col-xs-3">41% Complete</div>
-            </div>
-            
-            <div class="person person_admin">
-                <div class="person_name">
-                    Henry James
-                    <a href="#" class="person_open"></a>
-                </div>
-            </div>
-            <div class="person">
-                <div class="person_name">
-                    Jefferson Gilligan
-                    <a href="#" class="person_open"></a>
-                </div>
-            </div>
-            <div class="person">
-                <div class="person_name">
-                    Jose Robatham
-                    <a href="#" class="person_open"></a>
-                </div>
-            </div>
-            <div class="person person_edited">
-                <div class="person_name">
-                    Penny Cunnings
-                    <a href="#" class="person_open"></a>
-                </div>
-                <div class="app_form_block container-fluid">
-                    <form action="#" class="app_form">
+                <div class="streets_progress col-xs-3 text-center">41% Complete</div>
+            </header>
 
-                        <input type="text" class="form-control col_left" placeholder="First name">
+            <ul class="app_main_menu">
+                <li>
+                    <a href="#">
+                        <span class="street_name">Aldridge Street</span>
+                        <span class="homes">22</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="street_mark"></span>
+                        <span class="street_name street_name_checked">Muroe Street</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="street_name">Tanner Street</span>
+                        <span class="homes">34</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="street_name">Robinson Street</span>
+                        <span class="homes">51</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="street_mark"></span>
+                        <span class="street_name street_name_checked">Knocking Street</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="street_mark"></span>
+                        <span class="street_name street_name_checked">Jergason Street</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="street_name">Henry Street</span>
+                        <span class="homes">90</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="street_name">Claire Street</span>
+                        <span class="homes">39</span>
+                    </a>
+                </li>
+            </ul>
 
-                        <input type="text" class="form-control col_right" placeholder="Last name">
-
-                        <input type="email" class="form-control" placeholder="Email address">
-
-                        <input type="text" class="form-control col_left" placeholder="Address">
-
-                        <input type="text" class="form-control col_right" placeholder="City">
-
-                        <div class="app_select_block col_left">
-                            <select class="form-control " name="app_select_city" id="app_select_city">
-                                <option value="">Country</option>
-                                <option value="">Country</option>
-                            </select>
-                        </div>
-
-                        <input type="text" class="form-control col_right" placeholder="Zip/post code">
-
-                    </form>
-                </div>
-                <div class="app_tab_block container-fluid">
-                    <a href="#" class="app_tab_btn app_btn">Clear</a>
-                    <a href="#" class="app_tab_btn app_btn">Save</a>
-                </div>
-            </div>
-            <div class="app_add_block">
-                <a href="#" class="app_add app_btn">
-                    <i class="fa fa-plus-circle" aria-hidden="true"></i> Add New Volunteer
-                </a>
-            </div>
         </main>
-
-        <!-- footer -->
-        <footer class="app_footer">
-            <a href="#" class="app_footer_btn app_btn">Accept &amp; Continue</a>
-        </footer>
 
     </div>
 </body>
