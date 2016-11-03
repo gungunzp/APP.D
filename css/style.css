@@ -76,15 +76,12 @@ ul {
 		font-weight: bold;
 		padding: 0 0 0 1em;
 	}
-	a.arrow_left_btn {
-		font-size: 1.5rem;
-		color: #fff;
-		border-left: 1px solid #29AF9E;
-	}
+	a.arrow_left_btn,
 	a.menu_burger {
 		font-size: 1.5rem;
 		color: #fff;
-		border-left: 1px solid #6AC7BC;
+		text-align: center;
+		border-left: 1px solid rgba(255,255,255,.5);
 	}
 
 /*----------------- main ---------------------*/
@@ -175,7 +172,7 @@ ul {
 	}
 
 /* ---- Bootstrap customizing start ---- */
-.app_form .form-control {
+.form-control {
 	height: 2.5rem;
     color: #999;
     font: 400 .8rem 'Droid Sans', Arial, sans-serif;
@@ -199,10 +196,8 @@ ul {
 }
 /* -------- form styles end -----------*/
 
-.app_tab_block {
-	clear: both;
+.person_btns {
 	margin: 1.1rem .5rem 1.45rem;
-	padding: 0;
 }
 	a.app_btn {
 		display: block;
@@ -213,21 +208,12 @@ ul {
 		line-height: 2.5rem;
 		text-align: center;
 	}
-	a.app_tab_btn {
-		float: left;
-		width: 50%;
+	a.dark_grey_btn {
 		background-color: #fff;
 		color: #555;
-		border: 1px solid #555;
+		border: 2px solid #555;
 	}
-	a.app_tab_btn:first-child {
-		border-radius: 4px 0 0 4px;
-	}
-	a.app_tab_btn:last-child {
-		border-radius: 0 4px 4px 0;
-		border-left-width: 0;
-	}
-	a.app_tab_btn:hover {
+	a.dark_grey_btn:hover {
 		background-color: #555;
 		color: #fff;
 	}
@@ -235,13 +221,15 @@ ul {
 a.app_add {
 	position: relative;
 	width: 44%;
-	background-color: #999;
-	color: #fff;
 	margin: 1.1rem 29% 1.7rem 27%;
-	
 }
 
-a.app_add:hover {
+a.grey_btn {
+	background-color: #999;
+	color: #fff;
+}
+
+a.grey_btn:hover {
 	background-color: #555;
 	color: #fff;
 }
@@ -252,15 +240,6 @@ a.app_add:hover {
 	background-color: #00A08C;
 	padding: 1.1rem 1.7rem;
 }
-	a.app_footer_btn {
-		background-color: #00A08C;
-		color: #fff;
-		border: 1px solid #fff;
-	}
-	a.app_footer_btn:hover {
-		background-color: #fff;
-		color: #00A08C;
-	}
 
 /*----------------- popup ----------------*/
 
@@ -336,7 +315,7 @@ a.app_add:hover {
 
 /*************************** Manage Users page end ********************************/
 
-/*************************** Canvas List page start ********************************/
+/*************************** Canvass List page start ********************************/
 
 #map {
 	position: relative;
@@ -353,6 +332,7 @@ a.app_add:hover {
 		color: #00A08C;
 		font-size: 1rem;
 		line-height: 1.05rem;
+		text-align: center;
 		border-radius: 50%;
 		border: 1px solid #00A08C;
 		top: .6rem;
@@ -386,6 +366,7 @@ a.app_add:hover {
 		width: 26%;
 		background-color: #fff;
 		color: #00A08C;
+		text-align: center;
 		border-left: 1px solid #E2E2E2;
 		padding: 0;
 	}
@@ -397,6 +378,10 @@ a.app_add:hover {
 	line-height: 4.13rem;
 	border-bottom: 1px solid #C9C9C9;
 	padding: 0 2.5rem 0 2rem;
+}
+
+.app_main_menu li:last-child a {
+	border-bottom: none;
 }
 
 .app_main_menu li a:before {
@@ -463,4 +448,129 @@ a.app_add:hover {
 }
 
 
-/*************************** Canvas List page end ********************************/
+/*************************** Canvass List page end ********************************/
+
+/*************************** Donate page start ********************************/
+
+.app_main {
+	min-height: 43rem;
+}
+	.survey_header {
+		position: relative;
+		background-color: #F6F6F6;
+		color: #999;
+		font-size: .8rem;
+		font-weight: bold;
+		border-bottom: 1px solid #C9C9C9;
+		padding: 1.3rem 4rem 1rem 2.3rem;
+	}
+	.survey_header:before {
+		position: absolute;
+		content: '\f0f6';
+		font: 400 .95rem FontAwesome;
+		top: 1.3rem;
+		left: 1.1rem;
+	}
+		.q_progress {
+			position: absolute;
+			background-color: #fff;
+			color: #00A08C;
+			font-size: .6rem;
+			line-height: 1rem;
+			border: 1px solid #00A08C;
+			border-radius: .2rem;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 1.1rem;
+			padding: 0 .4rem;
+		}
+	.q_block {
+		font-size: .8rem;
+		line-height: 1.2rem;
+		padding: 1.4rem 1.5rem 1rem;
+	}
+		.q_number {
+			float: left;
+			width: 20%;
+			font-weight: bold;
+		}
+		.q_desc {
+			float: left;
+			width: 80%;
+		}
+
+.q_btns {
+	margin: .9rem 1.6rem;
+}
+	.btns_block a.app_btn {
+		float: left;
+		width: 50%;
+	}
+	.btns_block a.app_btn:first-child {
+		border-radius: 4px 0 0 4px;
+	}
+	.btns_block a.app_btn:last-child {
+		border-radius: 0 4px 4px 0;
+		border-left-width: 0;
+	}
+	a.wht_grey_btn {
+		background-color: #fff;
+		color: #999;
+		border: 2px solid #999;
+	}
+	a.wht_grey_btn:hover {
+		background-color: #999;
+		color: #fff;
+	}
+	a.green_btn {
+		background-color: #00A08C;
+		color: #fff;
+		border: 2px solid #fff;
+	}
+	a.green_btn:hover {
+		background-color: #fff;
+		color: #00A08C;
+	}
+
+.app_footer.btns_block {
+	padding: 1.7rem;
+}
+/*************************** Donate page end ********************************/
+
+/*************************** Email page start ********************************/
+
+.email_block {
+	border: 1px solid #999;
+	border-radius: 4px;
+	margin: .2rem 1.5rem;
+	padding: 0 1.1rem 1.8rem;
+}
+	.email_block label {
+		color: #777;
+		font-size: .7rem;
+		margin-top: 1.5rem;
+	}
+	.email_block input {
+		margin-bottom: .6rem;
+	}
+
+.divider {
+	height: 1px;
+	background-color: #C9C9C9;
+	margin: 2.7rem 1.2rem 1.7rem;
+}
+
+.next_btn {
+	width: 44%;
+	margin: 1.5rem auto;
+}
+
+/*************************** Email page end ********************************/
+
+
+
+
+
+
+
+
