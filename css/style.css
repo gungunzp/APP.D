@@ -63,7 +63,6 @@ ul {
 		padding: 0 0 0 1.5rem;
 	}
 		.app_header .logo a h1 {
-			display: block;
 			color: transparent;
 			font-family: Helvetica, Arial, sans-serif;
 			font-size: 1.4rem;
@@ -207,6 +206,7 @@ ul {
 		font-weight: bold;
 		line-height: 2.5rem;
 		text-align: center;
+		overflow: hidden;
 	}
 	a.dark_grey_btn {
 		background-color: #fff;
@@ -231,7 +231,6 @@ a.grey_btn {
 
 a.grey_btn:hover {
 	background-color: #555;
-	color: #fff;
 }
 
 /*----------------- footer ----------------*/
@@ -296,6 +295,7 @@ a.grey_btn:hover {
 				color: #fff;
 				font-size: .8rem;
 				line-height: 4rem;
+				text-align: center;
 			}
 			a.call_support {
 				background-color: #00A08C;
@@ -305,11 +305,9 @@ a.grey_btn:hover {
 				border-left: 1px solid #fff;
 			}
 			a.call_support:hover {
-				color: #fff;
 				background-color: #006b5f;
 			}
 			a.email_support:hover {
-				color: #fff;
 				background-color: #005470;
 			}
 
@@ -361,6 +359,7 @@ a.grey_btn:hover {
 		font: 400 1rem FontAwesome;
 		top: 1.2rem;
 		left: 1.2rem;
+		transform: rotateY(180deg);
 	}
 	.streets_progress {
 		width: 26%;
@@ -568,6 +567,84 @@ a.grey_btn:hover {
 /*************************** Email page end ********************************/
 
 
+/*************************** Welcome page start ********************************/
+
+.welcome_header {
+	position: relative;
+    background-color: #F6F6F6;
+}
+	.welcome_header a h1 {
+		position: absolute;
+		color: #fff;
+		font-family: Helvetica, Arial, sans-serif;
+		font-size: 1.8rem;
+		font-weight: bold;
+		letter-spacing: .07em;
+		top: 24%;
+		left: 50%;
+		transform: translateX(-50%);
+		margin: 0;
+		z-index: 10;
+	}
+	.welcome_header img {
+		position: relative;
+		width: 100%;
+		z-index: 5;
+	}
+	.welcome_header_txt {
+		position: relative;
+		color: #555;
+		font-size: .8rem;
+		text-align: center;
+		border-bottom: 1px solid #C9C9C9;
+		padding: .1rem 1.5rem .9rem;
+	}
+		.greating {
+			font-size: 1.1rem;
+		}
+			.user_name {
+				color: #0088B4;
+			}
+		.greating_desc {
+			font-size: .8rem;
+			line-height: 1.7rem;
+		}
+.welcome_main {
+	padding: 2rem 1.6rem;
+	min-height: 33rem;
+}
+	.welcome_main p {
+		font-size: .8rem;
+		margin: 0 0 1.1rem;
+	}
+.welcome_footer a {
+	display: block;
+	float: left;
+	width: 50%;
+	min-height: 4.4rem;
+	color: #fff;
+	font-size: .8rem;
+	line-height: 4.4rem;
+	text-align: center;
+}
+.welcome_footer a:first-child {
+	background-color: #00A08C;
+}
+.welcome_footer a:last-child {
+	background-color: #007DA5;
+}
+.welcome_footer a:first-child:hover {
+	background-color: #006b5f;
+}
+.welcome_footer a:last-child:hover {
+	background-color: #005470;
+}
+	.welcome_footer a i {
+		font-size: 1rem;
+		vertical-align: middle;
+	}
+
+/*************************** Welcome page end ********************************/
 
 
 
