@@ -69,6 +69,42 @@
             <a href="#" class="app_btn green_btn">Save &amp; Complete Survey</a>
         </footer>
 
+        <!-- popup -->
+        <div id="overlay_donation" class="app_overlay">
+            <a href="#overlay_donation" class="app_popup_close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </a>
+            <div id="popup_donation" class="app_popup">
+                <div class="logo_round_wrap">
+                    <div class="logo_round">
+                        <div class="logo_round_inner"></div>
+                    </div>
+                </div>
+                <header class="donation_header">
+                    <div class="donation_title">Canvass Donation</div>
+                    <div class="donation_desc">Thank you for your contribution!</div>
+                </header>
+                <div class="donation_body">
+
+                    <input type="email" id="d_email" class="form-control" placeholder="Email">
+
+                    <div class="three_inputs clearfix">
+                        <input type="text" id="d_card" class="form-control" placeholder="Card number">
+                        <input type="text" id="d_date" class="form-control" placeholder="MM/YY">
+                        <input type="text" id="d_cvc" class="form-control" placeholder="CVC">
+                    </div>
+
+                    <div class="app_checkbox">
+                        <input type="checkbox" id="runflat_in">
+                        <label for="runflat_in" class="label1"></label>
+                        <label for="runflat_in" class="label2">Remember me everywhere</label>
+                    </div>
+
+                    <a href="#" class="app_btn d_green_btn">Donate $450</a>
+                </div>
+            </div>
+        </div>
+
     </div>
 </body>
 
