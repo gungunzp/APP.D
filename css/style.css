@@ -198,6 +198,8 @@ ul {
 .person_btns {
 	margin: 1.1rem .5rem 1.45rem;
 }
+
+/* ---- app common styles start ---- */
 	a.app_btn {
 		display: block;
 		height: 2.5rem;
@@ -217,13 +219,6 @@ ul {
 		background-color: #555;
 		color: #fff;
 	}
-
-a.app_add {
-	position: relative;
-	width: 44%;
-	margin: 1.1rem 29% 1.7rem 27%;
-}
-
 a.grey_btn {
 	background-color: #999;
 	color: #fff;
@@ -232,8 +227,13 @@ a.grey_btn {
 a.grey_btn:hover {
 	background-color: #555;
 }
+/* ---- app common styles end ---- */
 
-/*----------------- footer ----------------*/
+a.app_add {
+	position: relative;
+	width: 44%;
+	margin: 1.1rem 29% 1.7rem 27%;
+}
 
 .app_footer {
 	background-color: #00A08C;
@@ -242,6 +242,7 @@ a.grey_btn:hover {
 
 /*----------------- popup ----------------*/
 
+/* ---- app common styles start ---- */
 .app_overlay {
 	position: absolute;
 	width: 100%;
@@ -272,8 +273,8 @@ a.grey_btn:hover {
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%,-50%);
-		text-align: center;
 	}
+/* ---- app common styles end ---- */
 	#popup_support {
 		width: 100%;
 		background-color: #fff;
@@ -296,7 +297,6 @@ a.grey_btn:hover {
 				display: block;
 				float: left;
 				width: 50%;
-				min-height: 4rem;
 				color: #fff;
 				font-size: .8rem;
 				line-height: 4rem;
@@ -310,7 +310,7 @@ a.grey_btn:hover {
 				border-left: 1px solid #fff;
 			}
 			a.call_support:hover {
-				background-color: #006b5f;
+				background-color: #00584F;
 			}
 			a.email_support:hover {
 				background-color: #005470;
@@ -375,7 +375,8 @@ a.grey_btn:hover {
 		padding: 0;
 	}
 
-.app_main_menu li a {
+/* ---- app common styles start ---- */
+.app_list li a {
 	display: block;
 	position: relative;
 	color: #555;
@@ -384,11 +385,7 @@ a.grey_btn:hover {
 	padding: 0 2.5rem 0 2rem;
 }
 
-.app_main_menu li:last-child a {
-	border-bottom: none;
-}
-
-.app_main_menu li a:before {
+.app_list li a:before {
 	display: block;
 	position: absolute;
 	content: '';
@@ -401,7 +398,7 @@ a.grey_btn:hover {
 	border-bottom: 2rem solid transparent;
 }
 
-.app_main_menu li a:after {
+.app_list li a:after {
 	display: block;
 	position: absolute;
 	content: '\f105';
@@ -409,26 +406,52 @@ a.grey_btn:hover {
 	top: 0;
 	right: 1.8rem;
 }
-	.street_name {
+
+.app_list li a:hover {
+	background-color: #00A08C;
+	color: #fff;
+}
+
+.app_list li a:hover span:first-child:before,
+.app_list li a:hover i {
+	color: #fff;
+}
+	.item_name {
 		display: inline-block;
 		position: relative;
 		min-width: 38%;
 		padding-left: 2rem;
 	}
-	.street_name:before {
+	.item_name:before {
 		position: absolute;
-		content: '\f041';
-		font: 400 1.3rem/4rem FontAwesome;
+		content: '';
 		top: 0;
 		left: 0;
+    	transition: color .2s ease-in-out;
 	}
-	.street_name_checked:before {
+	.map_pointer:before {
+		position: absolute;
+		content: '\f041';
+		color: #555;
+		font: 400 1.3rem/4rem FontAwesome;
+	}
+	.checked_item:before {
 		content: '\f046';
-		font: 400 1rem / 4rem FontAwesome;
-		top: 0;
 		color: #00A08C;
-    	transition: all .2s ease-in-out;
+		font: 400 1rem / 4rem FontAwesome;
 	}
+	.deleted_item:before {
+		content: '\f00d';
+		color: #D03B42;
+		font: 400 1rem / 4rem FontAwesome;
+	}
+	.empty_item:before {
+		content: '\f096';
+		color: #0088B4;
+		font: 400 1rem / 4rem FontAwesome;
+	}
+/* ---- app common styles end ---- */
+
 	.homes {
 		position: relative;
 		font-size: .7rem;
@@ -442,22 +465,14 @@ a.grey_btn:hover {
 		top: -.2rem;
 		left: 0
 	}
-.app_main_menu li a:hover {
-	background-color: #00A08C;
-	color: #fff;
-}
-
-.app_main_menu li a:hover .street_name_checked:before {
-	color: #fff;
-}
-
 
 /*************************** Canvass List page end ********************************/
 
 /*************************** Donate page start ********************************/
 
-.app_main {
+.q_main {
 	min-height: 43rem;
+	padding-bottom: 1rem;
 }
 	.survey_header {
 		position: relative;
@@ -506,6 +521,8 @@ a.grey_btn:hover {
 .q_btns {
 	margin: .9rem 1.6rem;
 }
+
+/* ---- app common styles start ---- */
 	.btns_block a.app_btn {
 		float: left;
 		width: 50%;
@@ -535,6 +552,7 @@ a.grey_btn:hover {
 		background-color: #fff;
 		color: #00A08C;
 	}
+/* ---- app common styles end ---- */
 
 .app_footer.btns_block {
 	padding: 1.7rem;
@@ -574,6 +592,7 @@ a.grey_btn:hover {
 	.donation_header {
 		background: linear-gradient(180deg, #F5F5F7 0, #E9E9EA 100%);
 		border-bottom: 1px solid #ddd;
+		text-align: center;
 		padding: 2.8rem 0 .6rem;
 	}
 		.donation_title {
@@ -676,6 +695,7 @@ a.grey_btn:hover {
 		font-size: .7rem;
 		font-weight: normal;
 		margin-bottom: 0;
+		padding-left: 1.8rem;
 	}
 
 a.d_green_btn {
@@ -688,7 +708,7 @@ a.d_green_btn {
 }
 
 a.d_green_btn:hover {
-	background-color: #006b5f;
+	background-color: #00584F;
 }
 /*************************** Donate page end ********************************/
 
@@ -717,7 +737,7 @@ a.d_green_btn:hover {
 
 .next_btn {
 	width: 44%;
-	margin: 1.5rem auto;
+	margin: 1rem auto;
 }
 
 /*************************** Email page end ********************************/
@@ -777,7 +797,6 @@ a.d_green_btn:hover {
 	display: block;
 	float: left;
 	width: 50%;
-	min-height: 4.4rem;
 	color: #fff;
 	font-size: .8rem;
 	line-height: 4.4rem;
@@ -790,7 +809,7 @@ a.d_green_btn:hover {
 	background-color: #007DA5;
 }
 .welcome_footer a:first-child:hover {
-	background-color: #006b5f;
+	background-color: #00584F;
 }
 .welcome_footer a:last-child:hover {
 	background-color: #005470;
@@ -801,6 +820,103 @@ a.d_green_btn:hover {
 
 /*************************** Welcome page end ********************************/
 
+/*************************** Household page start ********************************/
+
+.hh_top_header {
+	background-color: #F6F6F6;
+	color: #999;
+	font-size: .8rem;
+	font-weight: bold;
+	line-height: 3.2rem;
+	border-bottom: 1px solid #C9C9C9;
+	padding-left: 1rem;
+}
+	.hh_top_header i {
+		position: relative;
+		top: .1rem;
+		left: -.2rem;
+		font-size: 1rem;	
+	}
+.hh_info_row {
+	font-size: .9rem;
+	border-bottom: 1px solid #C9C9C9;
+	padding: .55rem 1.2rem;
+}
+
+.hh_info_row:last-child {
+	border: none;
+	padding-bottom: 1.2rem;
+}
+	.hh_info_row span {
+		display: inline-block;
+		min-width: 7.7rem;
+		padding-left: .4rem;
+	}
+	.hh_info_row span:first-child {
+		min-width: 6.8rem;
+	}
+
+.hh_top_footer a {
+	display: block;
+	float: left;
+	width: 50%;
+	color: #fff;
+	font-size: .85rem;
+	font-weight: bold;
+	line-height: 3.3rem;
+	text-align: center;
+}
+
+.hh_top_footer a:first-child {
+	background-color: #00A08C;
+}
+
+.hh_top_footer a:last-child div {
+	position: relative;
+	background-color: #555;
+}
+
+.hh_top_footer a:last-child .pointing_btn:before {
+	position: absolute;
+	content: '';
+	height: 0;
+	width: 0;
+	border-left: .9rem solid transparent;
+	border-right: .9rem solid transparent;
+	border-bottom: .7rem solid #555;
+	top: -.6rem;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.hh_top_footer a:first-child:hover {
+	background-color: #00584F;
+}
+
+.hh_top_footer a:last-child:hover .pointing_btn {
+	background-color: #444;
+}
+
+.hh_top_footer a:last-child:hover .pointing_btn:before {
+	border-bottom-color: #444;
+}
+
+.hh_bottom_header {
+	background-color: #F6F6F6;
+	color: #999;
+	font-size: .8rem;
+	font-weight: bold;
+	line-height: 3.2rem;
+	border-bottom: 1px solid #C9C9C9;
+	padding-left: 1rem;
+}
+
+.app_list i.fa-usd {
+	color: #00B760;
+	font-size: .75rem;
+    transition: color .2s ease-in-out;
+}
+/*************************** Household page end ********************************/
 
 
 
