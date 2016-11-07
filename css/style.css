@@ -182,7 +182,7 @@ ul {
 
 .app_select_block select {
     background: #fff url('../img/arrow_down_grey.png') right center no-repeat;
-	background-size: 1.5rem;
+	background-size: 1.7rem;
 	padding-right: 1rem;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -714,19 +714,19 @@ a.d_green_btn:hover {
 
 /*************************** Email page start ********************************/
 
-.email_block {
+.q_content_block {
 	border: 1px solid #999;
 	border-radius: 4px;
 	margin: .2rem 1.5rem;
-	padding: 0 1.1rem 1.8rem;
+	padding: .2rem 1.1rem 1.6rem;
 }
-	.email_block label {
+	.q_content_block label {
 		color: #777;
 		font-size: .7rem;
-		margin-top: 1.5rem;
+		margin-top: 1.3rem;
 	}
-	.email_block input {
-		margin-bottom: .6rem;
+	.q_content_block input {
+		margin-bottom: .7rem;
 	}
 
 .divider {
@@ -918,7 +918,31 @@ a.d_green_btn:hover {
 }
 /*************************** Household page end ********************************/
 
+/*************************** Date page start ********************************/
+.q_content_row label {
+	width: 23%;
+}
 
-
-
-
+.row_wrap {
+	display: inline-block;
+	white-space: nowrap;
+	width: 74%;
+}
+	.select_sm {
+		display: inline-block;
+		width: 32%;
+		vertical-align: text-top;
+		margin-left: 1%;
+	}
+@media (max-width: 25rem) {
+	.q_content_row label {
+		display: block;
+	}
+	.row_wrap {
+		display: block;
+	}
+	.select_sm {
+		width: 42%;
+	}
+}
+/*************************** Date page end ********************************/
