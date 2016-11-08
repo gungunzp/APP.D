@@ -85,77 +85,61 @@ ul {
 
 /*----------------- main ---------------------*/
 
-.intro {
+.users_header {
 	border-bottom: 1px solid #C9C9C9;
 	padding: 1.12rem 1.6rem 1.5rem;
 	letter-spacing: .01em;
 }
-	.intro .small {
+	.users_header .small {
 		font-size: .8rem;
 		letter-spacing: 0;
 	}
 
-.person {
+.user {
 	border-bottom: 1px solid #C9C9C9;
 	padding: 0 1.2rem;
 }
-	.person_name {
+	.user_name {
 		position: relative;
 		padding: 1.3rem .5em 1.35rem 2.7em;
 	}
-	.person_open {
+	.user_open {
 		float: right;
 	}
-	.person_open:before {
+	.user_open:before {
 		color: #555;
 		content: '\f107';
 		font: 400 1.5rem FontAwesome;
 	}
-	.person_edited .person_open:before {
+	.user_edited .user_open:before {
 		color: #999;
 		content: '\f106';
-		font: 400 1.5rem FontAwesome;
 	}
-	.person_name:before {
+	.user_name:before {
 		position: absolute;
 		content: '\f007';
 		font: 400 1.25rem FontAwesome;
 		top: 1.4rem;
 		left: .7rem;
 	}
-/*
-	.person_name:after {
-		position: absolute;
-		content: '\f107';
-		font: 400 1.5rem FontAwesome;
-		top: 1.1rem;
-		right: .5rem;
-	}
-*/
-	.person_admin .person_name {
+	.user_admin .user_name {
 		font-weight: bold;
 	}
-	.person_admin .person_name:before {
+	.user_admin .user_name:before {
 		content: '\f005';
 		color: #FFC141;
 	}
-.person_edited {
+.user_edited {
 	color: #999;
 	background-color: #F6F6F6;
 }
-	.person_edited .person_name:before {
+	.user_edited .user_name:before {
 		content: '\f14b';
 		color: #999;
 		font-size: 1.45rem;
 		top: 1.2rem;
 		left: .6rem;
 	}
-/*
-	.person_edited .person_name:after {
-		content: '\f106';
-		color: #999;
-	}
-*/
 
 /* -------- form styles start ------------*/
 .app_form_block {
@@ -195,7 +179,7 @@ ul {
 }
 /* -------- form styles end -----------*/
 
-.person_btns {
+.user_btns {
 	margin: 1.1rem .5rem 1.45rem;
 }
 
@@ -253,6 +237,8 @@ a.app_add {
 	padding: 0 1.6rem;
 	z-index: 999;
 }
+
+#overlay_info:target,
 #overlay_support:target,
 #overlay_donation:target {
 	display: none;
@@ -270,13 +256,14 @@ a.app_add {
 	.app_popup {
 		position: relative;
 		box-shadow: 2px 4px 7px #999;
-		top: 50%;
+/*		top: 50%;*/
+		top: 135px;
 		left: 50%;
-		transform: translate(-50%,-50%);
+/*		transform: translate(-50%,-50%);*/
+		transform: translate(-50%,0);
 	}
 /* ---- app common styles end ---- */
 	#popup_support {
-		width: 100%;
 		background-color: #fff;
 		border: 1px solid #D9D9D9;
 		text-align: center;
@@ -778,7 +765,7 @@ a.d_green_btn:hover {
 		.greating {
 			font-size: 1.1rem;
 		}
-			.user_name {
+			.user_login {
 				color: #0088B4;
 			}
 		.greating_desc {
@@ -818,6 +805,51 @@ a.d_green_btn:hover {
 		font-size: 1rem;
 	}
 
+#popup_info {
+	background-color: #fff;
+	border: 1px solid #D9D9D9;
+}
+	.info_header {
+		text-align: center;
+		padding: .8rem 1rem 1rem;
+		border-bottom: 1px solid #C9C9C9;
+	}
+		.info_title {
+			font-size: 1.1rem;
+			font-weight: bold;
+		}
+		.info_desc {
+			font-size: .8rem;
+		}
+	.faq {
+		font-size: .95rem;
+		border-bottom: 1px solid #C9C9C9;
+		padding: .9rem 1.1rem 1.1rem;
+	}
+	.faq:last-child {
+		border: none;
+	}
+		.faq_open {
+			float: right;
+		}
+		.faq_open:before {
+			color: #555;
+			content: '\f107';
+			font: 400 1.5rem FontAwesome;
+		}
+	.faq_expanded {
+		color: #999;
+		background-color: #F6F6F6;
+	}
+		.faq_expanded .faq_open:before {
+			color: #999;
+			content: '\f106';
+		}
+		.faq_content {
+			color: #555;
+			font-size: .77rem;
+			padding: 1rem 0;
+		}
 /*************************** Welcome page end ********************************/
 
 /*************************** Household page start ********************************/
