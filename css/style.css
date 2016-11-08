@@ -256,11 +256,9 @@ a.app_add {
 	.app_popup {
 		position: relative;
 		box-shadow: 2px 4px 7px #999;
-/*		top: 50%;*/
-		top: 135px;
+		top: 50%;
 		left: 50%;
-/*		transform: translate(-50%,-50%);*/
-		transform: translate(-50%,0);
+		transform: translate(-50%,-50%);
 	}
 /* ---- app common styles end ---- */
 	#popup_support {
@@ -667,7 +665,7 @@ a.app_add {
 /*		box-shadow: 0 1px 2px #999;*/
 		border: 1px solid #E5E5E5;
 		border-radius: 2px;
-		top: .5rem;
+		top: .4rem;
 		left: .5rem;
 	}
 	.app_checkbox input[type="checkbox"]:checked + .label1 {
@@ -966,6 +964,7 @@ a.d_green_btn:hover {
 		vertical-align: text-top;
 		margin-left: 1%;
 	}
+/*
 @media (max-width: 25rem) {
 	.q_content_row label {
 		display: block;
@@ -977,4 +976,56 @@ a.d_green_btn:hover {
 		width: 42%;
 	}
 }
+*/
 /*************************** Date page end ********************************/
+
+/*************************** Order page start ********************************/
+.order_wrap {
+	padding-top: 1.4rem;
+}
+	.organization {
+		border-radius: 4px;
+		background-color: #00A08C;
+		color: #fff;
+		font-size: .8rem;
+		cursor: move;
+		margin-bottom: .2rem;
+		padding: .7rem 1rem;
+	}
+		.organization i {
+			font-size: .7rem;
+		}
+		.org_number {
+			float: right;
+			font-weight: bold;
+		}
+/*************************** Order page end ********************************/
+
+
+/*************************** Multichoice page start ********************************/
+.multichoice_field {
+	margin-top: .35rem;
+	padding: .1rem .3rem 1.2rem;
+}
+.col_2 {
+	float: left;
+	width: 50%;
+	min-height: 3.2rem;
+	padding-left: .5rem;
+}
+	.q_content_block.multichoice_field label {
+		font-size: .8rem;
+		margin-top: .6rem;
+	}
+/*************************** Multichoice page end ********************************/
+
+
+
+
+
+
+
+
+
+
+
