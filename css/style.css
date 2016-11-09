@@ -495,12 +495,13 @@ a.app_add {
 	}
 		.q_number {
 			float: left;
-			width: 20%;
+			width: 18%;
 			font-weight: bold;
 		}
 		.q_desc {
 			float: left;
-			width: 80%;
+			width: 82%;
+			padding-left: .5rem;
 		}
 
 .q_btns {
@@ -1020,10 +1021,52 @@ a.d_green_btn:hover {
 /*************************** Multichoice page end ********************************/
 
 
+/*************************** Menu page start ********************************/
+.menu_bg {
+	background: rgba(4,116,151,.5) url(../img/menu_bg.jpg) no-repeat center;
+	background-size: cover;
+	min-height: 53.33rem;
+}
+	a.close_menu {
+		float: right;
+		color: #fff;
+		font-size: 1.8rem;
+		padding: .4rem 1rem;
+	}
+	.menu_list {
+		max-width: 74%;
+		margin: 0 auto;
+		padding-top: 6.4rem;
+	}
+	.menu_list li a {
+		display: block;
+		color: #fff;
+		border-bottom: 1px solid rgba(4,116,151,.5);
+		font-size: 1.05rem;
+		font-weight: bold;
+		text-align: center;
+		padding: 1.3rem 0;
+	}
+	.menu_list li:last-child a {
+		border: none;
+	}
+	a.close_menu:hover,
+	.menu_list li a:hover {
+			color: #ccc;
+	}
 
+/*************************** Menu page end ********************************/
 
+/*************************** Type page start ********************************/
 
+.type_txt {
+	font-size: .8rem;
+	line-height: 1.4rem;
+	padding: .5rem 1rem;
+	min-height: 13.5rem;
+}
 
+/*************************** Type page end ********************************/
 
 
 
