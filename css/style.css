@@ -43,14 +43,10 @@ ul {
 .app_wrapper {
 	position: relative;
 	max-width: 30rem;
-/*	max-width: 480px;*/
 	margin: 0 auto;
 }
 
 /*************************** Manage Users page start ********************************/
-
-/*------------------ header -------------------*/
-
 .app_header {
 	background-color: #00A08C;
 	color: #fff;	
@@ -83,8 +79,6 @@ ul {
 		border-left: 1px solid rgba(255,255,255,.5);
 	}
 
-/*----------------- main ---------------------*/
-
 .users_header {
 	border-bottom: 1px solid #C9C9C9;
 	padding: 1.12rem 1.6rem 1.5rem;
@@ -99,49 +93,54 @@ ul {
 	border-bottom: 1px solid #C9C9C9;
 	padding: 0 1.2rem;
 }
-	.user_name {
+	a.user_name {
+		display: block;
 		position: relative;
-		padding: 1.3rem .5em 1.35rem 2.7em;
-	}
-	.user_open {
-		float: right;
-	}
-	.user_open:before {
 		color: #555;
-		content: '\f107';
-		font: 400 1.5rem FontAwesome;
+		margin: 0 -1.2rem;
+		padding: 1.3rem 1.7em 1.35rem 3.9em;
 	}
-	.user_edited .user_open:before {
-		color: #999;
-		content: '\f106';
-	}
-	.user_name:before {
+	a.user_name:before {
 		position: absolute;
 		content: '\f007';
 		font: 400 1.25rem FontAwesome;
 		top: 1.4rem;
-		left: .7rem;
+		left: 1.9rem;
 	}
-	.user_admin .user_name {
+	a.user_name:after {
+		position: absolute;
+		color: #555;
+		content: '\f107';
+		font: 400 1.5rem FontAwesome;
+		top: 1.3rem;
+		right: 1.7rem;
+	}
+	.user_edited a.user_name:after {
+		color: #999;
+		content: '\f106';
+	}
+	.user_admin a.user_name {
 		font-weight: bold;
 	}
-	.user_admin .user_name:before {
+	.user_admin a.user_name:before {
 		content: '\f005';
 		color: #FFC141;
 	}
+
 .user_edited {
-	color: #999;
 	background-color: #F6F6F6;
 }
-	.user_edited .user_name:before {
+	.user_edited a.user_name {
+		color: #999;
+	}
+	.user_edited a.user_name:before {
 		content: '\f14b';
 		color: #999;
 		font-size: 1.45rem;
 		top: 1.2rem;
-		left: .6rem;
+		left: 1.8rem;
 	}
 
-/* -------- form styles start ------------*/
 .app_form_block {
 	padding: 0 .5rem;	
 }
@@ -164,6 +163,7 @@ ul {
 }
 /* ---- Bootstrap customizing end ---- */
 
+/* ---- app common styles start ---- */
 .app_select_block select {
     background: #fff url('../img/arrow_down_grey.png') right center no-repeat;
 	background-size: 1.7rem;
@@ -177,7 +177,7 @@ ul {
 .app_select_block select::-ms-expand {
     display: none;
 }
-/* -------- form styles end -----------*/
+/* ---- app common styles end ---- */
 
 .user_btns {
 	margin: 1.1rem .5rem 1.45rem;
@@ -216,15 +216,13 @@ a.grey_btn:hover {
 a.app_add {
 	position: relative;
 	width: 44%;
-	margin: 1.1rem 29% 1.7rem 27%;
+	margin: 1.1rem auto 1.7rem;
 }
 
 .app_footer {
 	background-color: #00A08C;
 	padding: 1.1rem 1.7rem;
 }
-
-/*----------------- popup ----------------*/
 
 /* ---- app common styles start ---- */
 .app_overlay {
@@ -237,7 +235,6 @@ a.app_add {
 	padding: 0 1.6rem;
 	z-index: 999;
 }
-
 #overlay_info:target,
 #overlay_support:target,
 #overlay_donation:target {
@@ -261,6 +258,7 @@ a.app_add {
 		transform: translate(-50%,-50%);
 	}
 /* ---- app common styles end ---- */
+
 	#popup_support {
 		background-color: #fff;
 		border: 1px solid #D9D9D9;
@@ -300,11 +298,9 @@ a.app_add {
 			a.email_support:hover {
 				background-color: #005470;
 			}
-
 /*************************** Manage Users page end ********************************/
 
 /*************************** Canvass List page start ********************************/
-
 #map {
 	position: relative;
 	min-height: 11.7rem;
@@ -334,14 +330,13 @@ a.app_add {
 	background-color: #F6F6F6;
 	font-size: .8rem;
 	font-weight: bold;
-	line-height: 3.35rem;
 	border-bottom: 1px solid #C9C9C9;
 }
 	.streets {
 		position: relative;
 		width: 74%;
 		color: #999;
-		padding: 0 0 0 2.8rem;
+		padding: 1.1rem 0 1.1rem 2.8rem;
 	}
 	.streets:before {
 		position: absolute;
@@ -357,7 +352,7 @@ a.app_add {
 		color: #00A08C;
 		text-align: center;
 		border-left: 1px solid #E2E2E2;
-		padding: 0;
+		padding: 1.1rem 0;
 	}
 
 /* ---- app common styles start ---- */
@@ -450,11 +445,9 @@ a.app_add {
 		top: -.2rem;
 		left: 0
 	}
-
 /*************************** Canvass List page end ********************************/
 
 /*************************** Donate page start ********************************/
-
 .q_main {
 	min-height: 43rem;
 	padding-bottom: 1rem;
@@ -563,7 +556,6 @@ a.app_add {
 		transform: translateX(-50%);
 		padding: .2rem;
 	}
-
 		.logo_round {
 			height: 100%;
 			background: linear-gradient(135deg, #149F84 0, #2CA991 46%, #149F84 47%, #149F84 100%);
@@ -590,116 +582,111 @@ a.app_add {
 			color: #5B5B65;
 			font-size: .7rem;
 		}
-.donation_body {
-	padding: 2.2rem 2.2rem;
-}
-	.donation_body .form-control {
-		position: relative;
-		height: 2rem;
-		background-image: url(../img/form_sprite.png);
-		background-repeat: no-repeat;
-		background-size: .8rem;
-	/*    font: 400 .8rem 'Droid Sans', Arial, sans-serif;*/
-		border-radius: 3px;
-		border-color: #ddd;
-		margin-bottom: 1rem;
-		padding-left: 1.6rem;
+	.donation_body {
+		padding: 2.2rem 2.2rem;
 	}
-	#d_email {
-		background-position: .4rem .6rem;
-	}
-	#d_card {
-		background-position: .4rem -.9rem;
-	}
-	#d_date {
-		background-position: .4rem -2.4rem;
-	}
-	#d_cvc {
-		background-position: .4rem -4rem;
-	}
-	#popup_donation input:focus {
-		background-position: -5rem center;
-		padding-left: .5rem;
-		z-index: 15;
-	}
-	.three_inputs input:first-child {
-		float: none;
-		width: 100%;
-		border-radius: 3px 3px 0 0;
-		margin: 0 0 -1px;
-	}
-	.three_inputs input:nth-child(2) {
-		float: left;
-		width: 50%;
-		border-radius: 0 0 0 3px;
-		border-right: none;
-	}
-	.three_inputs input:last-child {
-		float: left;
-		width: 50%;
-		border-radius: 0 0 3px 0;
-	}
-/* ----- */
+		.donation_body .form-control {
+			position: relative;
+			height: 2rem;
+			background-image: url(../img/form_sprite.png);
+			background-repeat: no-repeat;
+			background-size: .8rem;
+			border-radius: 3px;
+			border-color: #ddd;
+			margin-bottom: 1rem;
+			padding-left: 1.6rem;
+		}
+		#d_email {
+			background-position: .4rem .6rem;
+		}
+		#d_card {
+			background-position: .4rem -.9rem;
+		}
+		#d_date {
+			background-position: .4rem -2.4rem;
+		}
+		#d_cvc {
+			background-position: .4rem -4rem;
+		}
+		#popup_donation input:focus {
+			background-position: -5rem center;
+			padding-left: .5rem;
+			z-index: 15;
+		}
+		.three_inputs input:first-child {
+			float: none;
+			width: 100%;
+			border-radius: 3px 3px 0 0;
+			margin: 0 0 -1px;
+		}
+		.three_inputs input:nth-child(2) {
+			float: left;
+			width: 50%;
+			border-radius: 0 0 0 3px;
+			border-right: none;
+		}
+		.three_inputs input:last-child {
+			float: left;
+			width: 50%;
+			border-radius: 0 0 3px 0;
+		}
+		#popup_donation .app_checkbox {
+			border-radius: 4px;
+			border: 1px solid #E5E5E5;
+			margin-bottom: 1.6rem;
+		}
+/* ---- app common styles start ---- */
+		.app_checkbox {
+			position: relative;
+			padding: .2rem 0;
+		}
+			.app_checkbox input[type="checkbox"] {
+				display: none;
+			}
+			.app_checkbox .label1 {
+				position: absolute;
+				width: .9rem;
+				height: .9rem;
+				background: #fff;
+				background: -moz-radial-gradient( 50% 50%, circle, #fff 0%, #eee 100%);
+				background: -webkit-radial-gradient( 50% 50%, circle, #fff 0%, #eee 100%);
+				background: -o-radial-gradient( 50% 50%, circle, #fff 0%, #eee 100%);
+				background: -ms-radial-gradient( 50% 50%, circle, #fff 0%, #eee 100%);
+				border: 1px solid #E5E5E5;
+				border-radius: 2px;
+				top: .4rem;
+				left: .5rem;
+			}
+			.app_checkbox input[type="checkbox"]:checked + .label1 {
+				background: #00A08C url(../img/checked_mark.png) no-repeat center;
+				background-size: .9rem;
+				border: 1px solid #0088B4;
+			}
+			.app_checkbox label {
+				cursor: pointer;
+			}
+			.app_checkbox .label2 {
+				font-size: .7rem;
+				font-weight: normal;
+				margin-bottom: 0;
+				padding-left: 1.8rem;
+			}
+		a.d_green_btn {
+			height: 2rem;
+			background-color: #00A08C;
+			color: #fff;
+			font-size: .95rem;
+			line-height: 2rem;
+			border-radius: 2px;
+		}
+		a.d_green_btn:hover {
+			background-color: #00584F;
+		}
+/* ---- app common styles end ---- */
 
-#popup_donation .app_checkbox {
-	border-radius: 4px;
-	border: 1px solid #E5E5E5;
-	margin-bottom: 1.6rem;
-}
-
-.app_checkbox {
-	position: relative;
-	padding: .2rem 0;
-}
-	.app_checkbox input[type="checkbox"] {
-		display: none;
-	}
-	.app_checkbox .label1 {
-		position: absolute;
-		width: .9rem;
-		height: .9rem;
-		background: #fff;
-		background: -moz-radial-gradient( 50% 50%, circle, #fff 0%, #eee 100%);
-		background: -webkit-radial-gradient( 50% 50%, circle, #fff 0%, #eee 100%);
-		background: -o-radial-gradient( 50% 50%, circle, #fff 0%, #eee 100%);
-		background: -ms-radial-gradient( 50% 50%, circle, #fff 0%, #eee 100%);
-/*		box-shadow: 0 1px 2px #999;*/
-		border: 1px solid #E5E5E5;
-		border-radius: 2px;
-		top: .4rem;
-		left: .5rem;
-	}
-	.app_checkbox input[type="checkbox"]:checked + .label1 {
-		background: #00A08C url(../img/checked_mark.png) no-repeat center;
-		background-size: .9rem;
-		border: 1px solid #0088B4;
-	}
-	.app_checkbox label {
-		cursor: pointer;
-	}
-	.app_checkbox .label2 {
-		font-size: .7rem;
-		font-weight: normal;
-		margin-bottom: 0;
-		padding-left: 1.8rem;
-	}
-
-a.d_green_btn {
-	height: 2rem;
-	background-color: #00A08C;
-	color: #fff;
-	font-size: .95rem;
-	line-height: 2rem;
-	border-radius: 2px;
-}
-
-a.d_green_btn:hover {
-	background-color: #00584F;
-}
 /*************************** Donate page end ********************************/
 
 /*************************** Email page start ********************************/
-
 .q_content_block {
 	border: 1px solid #999;
 	border-radius: 4px;
@@ -725,19 +712,19 @@ a.d_green_btn:hover {
 	width: 44%;
 	margin: 1rem auto;
 }
-
 /*************************** Email page end ********************************/
 
 
 /*************************** Welcome page start ********************************/
-
 .welcome_header {
 	position: relative;
     background-color: #F6F6F6;
 }
 	.welcome_header a h1 {
 		position: absolute;
-		color: #fff;
+		background: url(../img/logo.png) no-repeat center;
+		background-size: contain;
+		color: transparent;
 		font-family: Helvetica, Arial, sans-serif;
 		font-size: 1.8rem;
 		font-weight: bold;
@@ -820,35 +807,41 @@ a.d_green_btn:hover {
 		.info_desc {
 			font-size: .8rem;
 		}
-	.faq {
+	a.faq {
+		display: block;
+		position: relative;
+		color: #555;
 		font-size: .95rem;
 		border-bottom: 1px solid #C9C9C9;
-		padding: .9rem 1.1rem 1.1rem;
+		padding: .9rem 2.2rem 1.1rem 1.1rem;
 	}
-	.faq:last-child {
+	a.faq:hover {
+		background-color: #eee;
+	}
+	li:last-child a.faq {
 		border: none;
 	}
-		.faq_open {
-			float: right;
-		}
-		.faq_open:before {
+		a.faq:after {
+			position: absolute;
 			color: #555;
 			content: '\f107';
 			font: 400 1.5rem FontAwesome;
+			top: .9rem;
+			right: 1.1rem;
 		}
-	.faq_expanded {
-		color: #999;
-		background-color: #F6F6F6;
-	}
-		.faq_expanded .faq_open:before {
+		a.faq_expanded {
+			color: #999;
+			background-color: #F6F6F6;
+		}
+		a.faq_expanded:after {
 			color: #999;
 			content: '\f106';
 		}
-		.faq_content {
-			color: #555;
-			font-size: .77rem;
-			padding: 1rem 0;
-		}
+			.faq_content {
+				color: #555;
+				font-size: .77rem;
+				padding: 1rem 0;
+			}
 /*************************** Welcome page end ********************************/
 
 /*************************** Household page start ********************************/
@@ -965,19 +958,6 @@ a.d_green_btn:hover {
 		vertical-align: text-top;
 		margin-left: 1%;
 	}
-/*
-@media (max-width: 25rem) {
-	.q_content_row label {
-		display: block;
-	}
-	.row_wrap {
-		display: block;
-	}
-	.select_sm {
-		width: 42%;
-	}
-}
-*/
 /*************************** Date page end ********************************/
 
 /*************************** Order page start ********************************/
@@ -1054,21 +1034,13 @@ a.d_green_btn:hover {
 	.menu_list li a:hover {
 			color: #ccc;
 	}
-
 /*************************** Menu page end ********************************/
 
 /*************************** Type page start ********************************/
-
 .type_txt {
 	font-size: .8rem;
 	line-height: 1.4rem;
 	padding: .5rem 1rem;
 	min-height: 13.5rem;
 }
-
 /*************************** Type page end ********************************/
-
-
-
-
-
