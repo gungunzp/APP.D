@@ -476,8 +476,7 @@ a.app_add {
 			line-height: 1rem;
 			border: 1px solid #00A08C;
 			border-radius: .2rem;
-			top: 50%;
-			transform: translateY(-50%);
+			top: 33%;
 			right: 1.1rem;
 			padding: 0 .4rem;
 		}
@@ -553,7 +552,7 @@ a.app_add {
 		box-shadow: 0 1px 2px #eee;
 		top: -2rem;
 		left: 50%;
-		transform: translateX(-50%);
+		margin-left: -2.05rem;
 		padding: .2rem;
 	}
 		.logo_round {
@@ -910,7 +909,7 @@ a.app_add {
 	border-bottom: .7rem solid #555;
 	top: -.6rem;
 	left: 50%;
-	transform: translateX(-50%);
+	margin-left: -.9rem;
 }
 
 .hh_top_footer a:first-child:hover {
